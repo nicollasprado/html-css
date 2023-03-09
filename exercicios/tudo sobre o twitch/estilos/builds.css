@@ -1,0 +1,73 @@
+@charset "UtF-8";
+
+p, h3, h4 {
+    color: #214b33;
+}
+
+.cabecalho > .cabecalho-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7em;
+}
+
+.cabecalho-item {
+    font-size: 3em;
+}
+
+.centro {
+    margin: 1em;
+    margin-top: 2em;
+    background-color: #169c50;
+    width: fit-content;
+    height: fit-content;
+    padding: 2em;
+    padding-bottom: 10em;
+}
+
+.centro > .centro-buildapfoto {
+    position: relative;
+    top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.centro-buildappalavras {
+    position: relative;
+    top: 5em;
+}
+
+.centro-buildappalavras > p {
+    color: #154b2c;
+}
+
+.centro-AP {
+    color: #154b2c;
+    display: flex;
+    justify-content: center;
+}
+
+.centro-buildappalavras > .centro-AP {
+    position: relative;
+    top: 1.2em;
+}
+
+.centro-ap-pool-miticos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 4em;
+}
+
+.centro-ap-pool-miticos > h3 {
+    margin-bottom: 1em;
+}
+
+.centro-ap-pool-mitico-coroa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+} 

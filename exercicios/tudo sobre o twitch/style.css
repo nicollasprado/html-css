@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* https://color.adobe.com/pt/explore -> paleta de cores */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #07A77B, #036F8C);
+}
+
+main {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.685);
+    width: 700px;
+    padding: 15px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #06BF7C  ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 2px 2px #048858;
+}
+
+h2 {
+    color: #06BF7C;
+    text-shadow: 1px 1px 2px #048858b6;
+}
+
+h3 {
+    color: #06BF7C;
+}
+
+p {
+    color: #036F8C;
+}
+
+ol {
+    color: #036F8C;
+}
+
+li {
+    color: #036F8C;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: green;
+}
+
+.subt1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.titulo {
+    padding: 5px;
+    margin-bottom: -20px;
+}
+
+.itap {
+    margin-left: 20px;
+}
+
+.block, .botao {
+  border: 1px solid #06BF7C;
+  padding: 8px;
+  margin-right: 15px;
+  background-color: #06BF7C;
+}
+
+.botao:hover {
+    border-color: 1px solid #04885875;
+    background-color: #04885875;
+}
+
+.botoes {
+    width: fit-content;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+ul {
+    width: fit-content;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+}
+
+li {
+    width: 150px;
+}
+
+.canal1, .canal2 {
+    margin-bottom: -25px;
+}
