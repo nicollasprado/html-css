@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 body {
-    background-color: hsl(0, 0%, 63%);
     width: 100vw;
     height: 100vh;
 }
@@ -88,7 +87,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2px 2px 15px black;
     border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
     width: 30vw;
@@ -189,8 +188,19 @@ main {
 
 /* Responsividade */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 713px) {
     main {
         flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .parte-direita {
+        width: 90vw;
+        border-top-right-radius: 0em;
+    }
+    .parte-esquerda {
+        width: 90vw;
+        border-bottom-left-radius: 0em;
+        border-top-left-radius: 0em;
     }
 }
