@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="estilos/geral.css">
+  <link rel="stylesheet" href="estilos/style.css">
+  <script src="assets/images/icon-memory.svg" crossorigin="anonymous"></script>
+  <script src="assets/images/icon-reaction.svg" crossorigin="anonymous"></script>
+  <script src="assets/images/icon-verbal.svg" crossorigin="anonymous"></script>
+  <script src="assets/images/icon-visual.svg" crossorigin="anonymous"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="parte-esquerda">
+    <h1>Your Result</h1>
+    <div class="parte-esquerda-circulo">
+      <h1>76</h1>
+      <h2>of 100</h2>
+    </div>
+    <div class="parte-esquerda-baixo">
+      <h1>Great</h1>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    </div>
+    
+    <div class="parte-direita">
+      <h1 class="parte-direita-summary">Summary</h1>
+      <div class="parte-direita-itens">
+        <div class="parte-direita-reaction">
+          <p class="parte-direita-reaction-frase">Reaction</p> 
+          <span>
+            <p class="parte-direita-itens-numesq">80</p> <p>/ 100</p>
+          </span>
+        </div>
+        <div class="parte-direita-memory">
+          <p class="parte-direita-memory-frase">Memory</p> 
+          <span>
+            <p class="parte-direita-itens-numesq">92</p> <p>/ 100</p>
+          </span>
+        </div>
+        <div class="parte-direita-verbal">
+          <p class="parte-direita-verbal-frase">Verbal</p> 
+          <span>
+            <p class="parte-direita-itens-numesq">61</p> <p>/ 100</p>
+          </span>
+        </div>
+        <div class="parte-direita-visual">
+          <p class="parte-direita-visual-frase">Visual</p> 
+          <span>
+            <p class="parte-direita-itens-numesq">72</p> <p>/ 100</p>
+          </span>
+        </div>
+      </div>
+      <button class="botao-continue">Continue</button>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+</body>
+</html>
