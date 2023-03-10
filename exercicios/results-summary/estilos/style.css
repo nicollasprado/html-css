@@ -23,10 +23,10 @@ main {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(234, 85%, 45%));
     border-bottom-left-radius: 2em;
     border-top-left-radius: 2em;
-    width: 30vw;
-    height: 70vh;
     padding: 20px;
     padding-bottom: 40px;
+    width: 320px;
+    height: 450px;
 }
 
 .parte-esquerda h1 {
@@ -90,8 +90,8 @@ main {
     box-shadow: 2px 2px 15px black;
     border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
-    width: 30vw;
-    height: 70vh;
+    width: 320px;
+    height: 450px;
     padding: 20px;
     padding-bottom: 40px;
 }
