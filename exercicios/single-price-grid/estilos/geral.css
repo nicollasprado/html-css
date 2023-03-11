@@ -1,0 +1,12 @@
+@charset "UtF-8";
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    font-family: 'Karla', sans-serif;
+}

@@ -1,0 +1,139 @@
+@charset "UtF-8";
+
+body {
+    width: clamp(375px, 50%, 1440px);
+    min-height: 100vh;
+    background-color: hsl(218, 22%, 67%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . . ."
+    "bloco1 bloco1 bloco1 bloco1"
+    "bloco2 bloco2 bloco3 bloco3"
+    ". . . .";
+}
+
+/* Bloco 1 */
+
+main .bloco1 {
+    background-color: white;
+    grid-area: bloco1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.bloco1 h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.bloco1 h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.bloco1 p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5em;
+    max-width: 550px;
+}
+
+/* Bloco 2 */
+
+main .bloco2 {
+    background-color: hsla(179, 58%, 40%, 0.842);
+    border-bottom-left-radius: 0.5em;
+    grid-area: bloco2;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.bloco2 h3 {
+    color: white;
+}
+
+.bloco2-valores {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco2-valores-preco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.bloco2-valores-preco p {
+    color: hsl(218, 22%, 67%)
+}
+
+.bloco2-valores-preco h3 {
+    font-size: 30px;
+}
+
+.bloco2-valores > p {
+    color: white;
+}
+
+.btn-signup {
+    padding: 1em;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: bold;
+    border-style: none;
+}
+
+.btn-signup:hover {
+    cursor: pointer;
+    background-color: hsl(71, 57%, 49%);
+}
+
+/* Bloco 3 */
+
+main .bloco3 {
+    background-color: hsla(179, 62%, 43%, 0.658);
+    grid-area: bloco3;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 0.5em;
+    gap: 1em;
+}
+
+.bloco3 h3 {
+    color: white;
+}
+
+.bloco3 p {
+    color: hsl(204, 43%, 93%);
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    main .bloco2 {
+        border-bottom-left-radius: 0em;
+    }
+    main .bloco3 {
+        border-bottom-left-radius: 0.5em;
+    }
+}
