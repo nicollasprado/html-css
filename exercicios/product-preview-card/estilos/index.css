@@ -96,6 +96,14 @@ main {
     font-weight: 700;
     border-radius: 0.5em;
     border-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+.btn-adicionar-carrinho img {
+    padding-right: 1em;
 }
 
 .btn-adicionar-carrinho:hover {
@@ -111,7 +119,7 @@ main {
     .parte-esquerda > img {
         content: url(../images/image-product-mobile.jpg);
         width: 375px;
-        max-height: 360px;
+        height: 360px;
         border-bottom-left-radius: 0em;
         border-top-right-radius: 1em;
     }
