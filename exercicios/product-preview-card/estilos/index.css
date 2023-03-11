@@ -103,10 +103,6 @@ main {
     background-color: hsl(158, 36%, 30%);
 }
 
-footer {
-    position: relative;
-}
-
 @media only screen and (max-width: 767px) {
     main {
         display: flex;
