@@ -1,0 +1,123 @@
+@charset "UtF-8";
+
+body {
+    width: clamp(375px, 50%, 1440px);
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+main {
+    max-width: 1440px;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* Parte Esquerda */
+
+.parte-esquerda img {
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    max-width: 700px;
+    max-height: 460px;
+}
+
+/* Parte Direita */
+
+.parte-direita {
+    max-width: 700px;
+    max-height: 460px;
+    padding: 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.parte-direita h1 {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.parte-direita-marca {
+    display: flex;
+    flex-direction: column;
+}
+
+.parte-direita-marca h2 {
+    font-weight: 700;
+    font-size: 30px;
+    text-indent: 0.1em;
+}
+
+.parte-direita-frase {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.3em;
+}
+
+.parte-direita-frase p {
+    text-align: start;
+    font-size: 14px;
+}
+
+.parte-direita-precos {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.parte-direita-precos h3 {
+    font-size: 30px;
+}
+
+.parte-direita-precos h4 {
+    text-decoration: line-through;
+}
+
+/* Botão */
+
+.btn-adicionar-carrinho {
+    padding: 1em;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 700;
+    border-radius: 0.5em;
+    border-style: none;
+}
+
+.btn-adicionar-carrinho:hover {
+    cursor: pointer;
+    background-color: hsl(158, 36%, 30%);
+}
+
+@media only screen and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .parte-esquerda > img {
+        content: url("../images/image-product-mobile.jpg") no-repeat;
+        width: 375px;
+        max-height: 360px;
+        border-bottom-left-radius: 0em;
+        border-top-right-radius: 1em;
+    }
+    .parte-direita {
+        border-top-right-radius: 0em;
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+}
