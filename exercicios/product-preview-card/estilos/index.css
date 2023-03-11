@@ -109,7 +109,7 @@ main {
         flex-direction: column;
     }
     .parte-esquerda > img {
-        content: url("../images/image-product-mobile.jpg") no-repeat;
+        content: url(../images/image-product-mobile.jpg);
         width: 375px;
         max-height: 360px;
         border-bottom-left-radius: 0em;
