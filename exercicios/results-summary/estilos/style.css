@@ -187,7 +187,7 @@ main {
 
 /* Responsividade */
 
-@media only screen and (max-width: 713px) {
+@media only screen and (max-width: 768px) {
     main {
         flex-direction: column;
         padding-top: 0px;
