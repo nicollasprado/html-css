@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Formulário de Inscrição</h1>
+        <form action="cadastro.js" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required autocomplete="username">
+                </p>
+                <p>
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required minlength="8" max="20" size="20" placeholder="min-8" autocomplete="current-password">
+                </p>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="sexom" value="M" checked>
+                    <label for="sexom">Masculino</label>
+                    <input type="radio" name="sexo" id="sexof" value="F"></input>
+                    <label for="sexof">Feminino</label>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <Legend>teste</Legend>
+                <p>
+                    <label for="inota">Nota de Atendimento:</label>
+                        <input type="number" name="nota" id="inota" min="0" max="10" step="0.1" value="5">
+                </p>
+                <p>
+                    <label for="iingressao">Data de Ingressão:</label>
+                    <input type="date" name="ingressao" id="iingressao">
+                </p>
+            </fieldset>
+            <p>
+                <label for="itelefone"></label>
+                <input type="tel" name="telefone" id="itelefone" placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)\d{4}-\d{4}$" required>
+            </p>
+            <fieldset>
+                <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="basquete" id="ibasquete" value="Basquete" checked>
+                <label for="ibasquete">Basquete</label> <br>
+                <input type="checkbox" name="volei" id="ivolei" value="Volei"> 
+                <label for="ivolei">Vôlei</label> <br>
+            </fieldset>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#ff0000">
+            </p>
+            <p>
+                <label for="inivel">Nivel:</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="3" value="1" oninput="inivelval.innerHTML = Number(inivel.value)">
+                <output id="inivelval">1</output>
+            </p>
+            <p>
+                <label for="iarquivo">Arquivo:</label>
+                <input type="file" name="arquivp" id="iarquivo">
+            </p>
+            <p>
+                <label for="iforma">Forma:</label>
+                <select name="forma" id="iforma">
+                    <option value="selecionado" selected>-- Escolha --</option>
+                    <optgroup label="Gerais">
+                        <option value="quadrado">Quadrado</option>
+                        <option value="triangulo">triangulo</option>
+                        <option value="circulo">circulo</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="listprof">
+                <datalist id="listprof">
+                    <option value="eng">Engenheiro</option>
+                    <option>Médico</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">Mensagem Extra:</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="sua mensagem..." maxlength="125"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
