@@ -1,0 +1,42 @@
+body{
+    /* Body -> seletor */
+    background-color: cadetblue;
+    color: aliceblue;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Font-Family -> tenta usar arial, caso o pc nao tenha ele usa a proxima, nesse caso a helvetica, e se não tiver também ele irá pegar uma sans-serif qualquer */
+}
+
+h1{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+ol{
+    background-color: aqua;
+    list-style-image: url(marcador.png);
+}
+
+li{
+    background-color: beige;
+    color: black;
+    margin: 0.5em;
+    padding: 0.3em;
+}
+
+.viloes-li-tigre{
+    list-style-position: inside;
+}
+
+.viloes-li-pavao{
+    list-style-type: none;
+}
+
+.viloes-li-elefante1{
+    list-style-type: circle;
+}
+
+address{
+    text-align: center;
+}
