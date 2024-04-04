@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+    --color-yellow: #F5BD26;
+    --color-lightYellow: #F9F1DC;
+}
+
+* {
+    font-family: "EB Garamond", serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

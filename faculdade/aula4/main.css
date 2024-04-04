@@ -1,0 +1,20 @@
+body {
+    background-image: url(background2.jpg), url(background.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: auto, auto;
+    background-attachment: fixed, scroll; /* Forma de apresentação do plano de fundo*/
+    background-position: top right, center; /* O padrão é no canto superior esquerdo */
+}
+
+figure {
+    margin: 2em;
+    float: left; /* Faz o texto fluir onde a imagem não está ocupando */
+}
+
+img {
+    border-radius: 0 5em 0 0;
+    box-shadow: 0 0 1em white;
+    border: 1px solid black;
+    padding: 1em;
+    filter: saturate(0);
+}

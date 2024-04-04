@@ -1,0 +1,50 @@
+body > h1.logoEmpresa {
+    text-align: center;
+}
+
+
+body > figure.destaque {
+    text-align: center;
+}
+
+body > figure.destaque > img {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: var(--color-yellow);
+}
+
+
+body > ul.ulComidasExemplos {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+body > ul.ulComidasExemplos > li {
+    display: inline;
+    margin: 1em;
+    list-style: none
+}
+
+
+body > div.oChefInfos {
+    text-align: center;
+}
+
+body > div.oChefInfos > h2 {
+    font-size: 2.8em;
+    font-style: italic;
+    padding-bottom: 15px;
+    background-color: var(--color-yellow);
+}
+
+body > div.oChefInfos > p {
+    margin-top: 2.5em;
+    font-size: 1.4em;
+}
+
+
+footer {
+    margin-top: 8em;
+    text-align: center;
+}
