@@ -1,0 +1,17 @@
+#projetos {
+    display: flex;
+    gap: 1em;
+    margin: 2em 0 2em;
+}
+
+#projetos div h3 {
+    margin: 0 0 1em;
+}
+
+#projetos div p {
+    margin: 1em 0 0;
+}
+
+#projetos figure a {
+    width: 10em;
+}

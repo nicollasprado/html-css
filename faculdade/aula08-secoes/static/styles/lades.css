@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    max-width: 70em; /* Define uma largura máxima e ao reduzir a escala da tela não fica barra de rolagem horizontal */
+    margin: 1em auto; /* Auto cria uma margin automatica para os lados */
+    background-color: aliceblue;
+    padding: 1em;
+}
+
+header, footer, main { /* Agrupamento de seletores */
+    padding: 1em;
+    background-color: burlywood;
+    margin: 1em;
+}
+
+header > nav{ /* Hereditáriedade */
+    padding: 1em;
+}
