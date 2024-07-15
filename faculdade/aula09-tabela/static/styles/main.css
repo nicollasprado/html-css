@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#tabelaEventoEncom{
+    margin: 2em auto;
+    border-collapse: collapse; /* Tira o espaçamento entre bordas, juntando-as */
+    max-width: 60em;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+tr:nth-child(even){
+    /* Seletor de elementos com base em suas posições em um grupo de elementos irmãos */
+    /* Even = par ; Odd = impar */
+    /* nth = enésimo */
+    background-color: beige;
+}

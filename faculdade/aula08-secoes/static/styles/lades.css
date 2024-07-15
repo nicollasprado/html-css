@@ -1,6 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 #container {
@@ -11,11 +17,36 @@
 }
 
 header, footer, main { /* Agrupamento de seletores */
+    margin: .5em;
     padding: 1em;
     background-color: burlywood;
-    margin: 1em;
+    text-align: center;
 }
 
 header > nav{ /* Hereditáriedade */
     padding: 1em;
+}
+
+header nav ol{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+header nav ol li a{
+    transition: 0.5s;
+}
+
+header nav ol li a:hover{
+    color: aquamarine;
+    letter-spacing: .01em;
+    font-size: large;
+}
+
+header h1 a{
+    transition: .5s;
+}
+
+header h1 a:hover{
+    color: aquamarine;
 }

@@ -1,0 +1,22 @@
+#tabelaLivros{
+    margin: 1em auto;
+    border-collapse: collapse;
+    background-color: aliceblue;
+}
+
+#tabelaLivros caption{
+    font-size: larger;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: .5em;
+}
+
+tr:nth-child(4) td:nth-child(4){
+    background-color: rgb(255, 58, 58);
+}
+
+tr:nth-child(6) td:nth-child(4){
+    background-color: rgb(255, 58, 58);
+}
