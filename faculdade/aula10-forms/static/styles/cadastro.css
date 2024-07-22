@@ -1,0 +1,25 @@
+form{
+    margin: 2em auto;
+    max-width: 30em;
+    box-shadow: 0 0 0 .1em black;
+    padding: 1em;
+    border-radius: 2em;
+    background-color: beige;
+}
+
+label {
+    display: inline-block;
+    width: 9em;
+    margin-bottom: .5em;
+}
+
+input[type='submit'] {
+    background-color: aqua;
+    padding: .5em;
+    transition: .5s;
+    cursor: pointer;
+}
+
+input[type='submit']:hover {
+    background-color: aquamarine;
+}

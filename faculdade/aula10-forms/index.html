@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="dadosenviados.html">
+        <!-- Action determina o arquivo que vai receber os dados -->
+         
+        <label for="login">Login: </label>
+        <!-- Label atua como um rótulo e ajuda na acessibilidade aumentando a área do toque do objeto a quem ele se refere -->
+
+        <input type="text" id="login" value="nome de usuario" required><br>
+        <!-- Input cria uma caixa de entrada de dados -->
+        <!-- Value deixa um valor predefinido na caixa de input -->
+        <!-- Required define que o input é de preenchimento obrigatório -->
+
+        <label>Senha:
+            <input type="password" id="senha" placeholder="sua senha" maxlength="10">
+            <!-- Placeholder é um texto que aparece no input porém não conta como valor -->
+            <!-- Maxlength define uma quantidade máxima de caracteres para o input -->
+        </label><br>
+
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>
