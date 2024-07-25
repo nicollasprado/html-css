@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="dadosenviados.html">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome"><br>
+
+        <label for="filhos">No de filhos:</label>
+        <input type="number" id="filhos"><br>
+
+        <label for="idade">Idade:</label>
+        <input type="range" id="idade"><br>
+
+        <label for="uf">UF:</label>
+        <select name="uf" id="uf">
+            <option value="rn">RN</option>
+            <option value="pe">PE</option>
+            <option value="pb">PB</option>
+        </select><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" list="lista-cidades"><br>
+        <datalist id="lista-cidades"> 
+            <!-- Datalist, em oposição ao select, tem como digitar para pesquisar -->
+            <option value="natal">Natal</option>
+            <option value="rec">Recife</option>
+            <option value="jp">João Pessoa</option>
+        </datalist>
+
+        <fieldset>
+            <!-- Usado para separar formulários -->
+            <legend>Áreas de interesse</legend>
+            <!-- Legend é o título da área -->
+
+            <label><input type="checkbox" name="areas" value="design">Design</label><br>
+            <label><input type="checkbox" name="areas" value="manutencao">Manutenção</label><br>
+            <label><input type="checkbox" name="areas" value="redes">Redes</label><br>
+            <label><input type="checkbox" name="areas" value="programacao">Programação</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formação</legend>
+
+            <label><input type="radio" name="formacao" value="medio">Médio</label>
+            <label><input type="radio" name="formacao" value="superior">Superior</label>
+            <label><input type="radio" name="formacao" value="meste">Mestre</label>
+            <label><input type="radio" name="formacao" value="doutor">Doutor</label>
+        </fieldset>
+
+        <input type="submit" id="Enviar" value="Enviar">
+    </form>
+</body>
+</html>
