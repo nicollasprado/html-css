@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    /* O display flex é aplicado ao elemento pai e altera o comportamento dos elementos filhos */
+    /* Flex-direction: row-reverse;  -  Muda a ordem dos elementos*/
+    flex-wrap: wrap;
+    /* Flex wrap funciona como quebra de linha */
+    gap: 1em;
+    /* Gap define o espaçamento entre os elementos filhos */
+    max-width: 74em;
+    margin: 2em auto;
+    border: 1px solid black;
+    padding: .3em;
+}
+
+section{
+    max-width: 20em;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 2em;
+}

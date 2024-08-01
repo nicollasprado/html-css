@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header ol {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+header nav a{
+    background-color: black;
+    color: whitesmoke;
+    width: 7em;
+    display: inline-block;
+    /* Display inline block faz a formatação ir para todo o bloco e não apenas para o texto como o inline */
+    padding: 1em 2em;
+    box-shadow: 0 0 .3 gray;
+    border-radius: .5em;
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav li a:hover{
+    /* Dois pontos indica uma subclasse */
+    background-color: rgb(7, 80, 40);
+    color: white;
+}

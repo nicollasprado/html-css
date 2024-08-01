@@ -1,0 +1,36 @@
+div.container{
+    display: flex;
+    border: 1px solid black;
+}
+
+div.container div{
+    max-width: 20em;
+    background-color: beige;
+}
+
+div.space-between{
+    justify-content: space-between;
+    gap: 1em;
+}
+
+div.space-around{
+    justify-content: space-around;
+    gap: 1em;
+}
+
+div.space-evenly{
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+div.center{
+    justify-content: center;
+    gap: 1em;
+}
+
+/* div.container > div{} - A mais específica de todas */
+/* div div{} - A mais genérica e só serve para quando tem poucos elementos pois formata apenas a proxima div que está dentro de div */
+/* div.container div{} - Formata todas divs dentro das divs que possuem a classe container */
+/* div > div{} - Seleciona a div que possui uma div como tag anterior */
+/* .container div{} - Vai formatar todas divs que estão dentro de um elemento com classe container */
+/* .container > div{} - Vai formatar a tag div que possui cmo elemento pai um elemento com tag container */
