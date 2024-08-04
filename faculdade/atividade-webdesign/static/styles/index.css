@@ -34,8 +34,7 @@ body > div.oChefInfos {
 body > div.oChefInfos > h2 {
     font-size: 2.8em;
     font-style: italic;
-    padding-bottom: 15px;
-    background-color: var(--color-yellow);
+    border-bottom: 5px solid var(--color-yellow);
 }
 
 body > div.oChefInfos > p {
