@@ -69,7 +69,6 @@ main section h2 {
 }
 
 main section > div {
-    max-width: 63em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
