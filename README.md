@@ -1,3 +1,3 @@
 # html-css
  
-testando atualização no repositório
+Meus estudos sobre html e css
