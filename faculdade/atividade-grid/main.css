@@ -1,0 +1,23 @@
+main{
+    padding: 1em;
+    border: 1px solid blue;
+    display: grid;
+    grid-template-areas: 
+    "nav a a b c"
+    "nav d d d c"
+    "nav e e e c";
+    gap: 1em;
+}
+
+.area-nav{grid-area: nav;}
+.area-a{grid-area: a;}
+.area-b{grid-area: b;}
+.area-c{grid-area: c;}
+.area-d{grid-area: d;}
+.area-e{grid-area: e;}
+
+main > .area-grid{
+    padding: 2em;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}

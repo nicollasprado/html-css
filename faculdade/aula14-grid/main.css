@@ -1,0 +1,32 @@
+main{
+    width: 70em;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: grid;
+    /* Display grid deve ser aplicado no elemento pai e separa os elementos em uma grade com linhas e colunas */
+    grid-template-areas: 
+    "c b"
+    "a a"
+    "d f"
+    "e f";
+    /* Grid template areas recebe a diagramação das áreas */
+    grid-template-columns: 1fr 2fr;
+    /* Grid template columns define a largura de cada coluna */
+    grid-template-rows: 20em 10em 30em 10em;
+    /* Grid template rows define a altura de cada linha */
+    /* Grid template columns e rows são atributos opcionais e para cada linha/coluna deve ter um valor */
+    gap: 2em;
+}
+
+div.area-a{grid-area: a;}
+/* Essa linha define uma váriavel para a área, que serve para facilitar a diagramação no grid */
+div.area-b{grid-area: b;}
+div.area-c{grid-area: c;}
+div.area-d{grid-area: d;}
+div.area-e{grid-area: e;}
+div.area-f{grid-area: f;}
+
+main > div{
+    background-color: rgb(246, 236, 222);
+    padding: 2em;
+}
