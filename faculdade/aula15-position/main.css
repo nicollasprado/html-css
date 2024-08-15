@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer{
+    background-color: darkgreen;
+    padding: 2em;
+    color: white;
+}
+
+main p{
+    margin: 2em;
+}
+
+div#modal, div.box{
+    width: 20em;
+    height: 20em;
+    background-color: rgba(12, 226, 41, 0.9);
+    padding: 5em;
+    box-sizing: border-box;
+    /* BOX SIZING border box faz com que o padding não aumente o tamanho da caixa e sim a sua area interna */
+    position: absolute;
+    /* Position absolute faz com que a gente consiga colocar ele em qualquer lugar que queiramos */
+    left: 300px;
+    top: 300px;
+    /* right: 300px;
+       bottom 
+       É necessário escolher duas coordenadas, sendo uma vertical e uma horizontal
+    */
+}
+
+div.box1{
+    left: 400px;
+    top: 400px;
+    background-color: royalblue;
+    z-index: 1;
+    /* Z-index é responsável por mudar a ordem de sobreposição dos posicionamentos. Ele trabalha recebendo um valor inteiro e o maior sendo posicionado mais à frente */
+}
+
+div.box2{
+    background-color: violet;
+    left: 500px;
+    top: 500px;
+}
+
+div.esmaecer{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    list-style: none;
+}
+
+header{
+    background: linear-gradient(to left,#7292A6, #224459 );
+    padding: 1em;
+    color: white;
+}
+
+main > nav{
+    background-color: #95b3c5;
+    color: #224459;
+}
+
+main > nav ol li {
+    font-size: xx-large;
+}
+
+main > nav ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.area-nav{grid-area: nav;}
+.area-desc{grid-area: des;}
+.area-content{grid-area: con;}
+.area-larissa{grid-area: lar;}
+.area-programacao{grid-area: pro;}
+.area-inscricao{grid-area: ins;}
+.area-amanda{grid-area: ama;}
+.area-natalia{grid-area: nat;}
+.area-henrique{grid-area: hen;}
+.area-organizacao{grid-area: org;}
+
+main{
+    max-width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "nav des pro pro ama"
+    "nav con ins nat hen"
+    "nav lar ins org org";
+    gap: 1em;
+}
+
+main 
+
+.img{
+    max-width: 15em;
+    max-height: 20em;
+    width: auto;
+    height: auto;
+}
+
+footer{
+    background-color: #224459;
+    color: white;
+    padding-bottom: 10em;
+}
