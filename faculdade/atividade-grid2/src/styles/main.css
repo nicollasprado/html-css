@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
-    list-style: none;
+    text-decoration: none;
 }
+
+h3 {font-size: x-large;}
 
 header{
     background: linear-gradient(to left,#7292A6, #224459 );
@@ -15,17 +17,21 @@ header{
 main > nav{
     background-color: #95b3c5;
     color: #224459;
-}
-
-main > nav ol li {
-    font-size: xx-large;
+    padding: 1em;
 }
 
 main > nav ol {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 3em;
+    list-style: none;
 }
+
+main > nav ol li {
+    font-size: xx-large;
+    margin: 0 auto;
+}
+
 
 .area-nav{grid-area: nav;}
 .area-desc{grid-area: des;}
@@ -40,25 +46,168 @@ main > nav ol {
 
 main{
     max-width: 100%;
+    margin: 1em 0 1em 0;
     display: grid;
     grid-template-areas: 
     "nav des pro pro ama"
     "nav con ins nat hen"
     "nav lar ins org org";
+    grid-template-columns: 2fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 16em 13em 11em;
     gap: 1em;
 }
 
-main 
+main .area-grid{background-color: rgb(224, 224, 224);}
 
-.img{
+
+main div.area-progrmacao table th, td{
+    border: 1px solid white;
+    text-align: center;
+    width: 5em;
+}
+
+main section.area-programacao table{border-collapse: collapse;}
+
+main div.area-desc{
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5em;
+    padding: 3em;
+}
+
+main div.area-desc input[type='submit']{
+    color: #224459;
+    border: 1px solid #224459;
+    background-color: transparent;
+    width: 5em;
+    transition: .5s;
+    cursor: pointer;
+    font-size: medium;
+}
+
+main div.area-desc input[type='submit']:hover{
+    background-color: white;
+}
+
+main div.area-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+main div.area-content ul{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+main section.area-inscricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 1em;
+    padding: 1em;
+}
+
+main section.area-inscricao form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+main section.area-inscricao form input[type='text'], input[type='email'], input[type='tel']{
+    padding: 1em;
+}
+
+main section.area-inscricao form input[type='checkbox'], input[type='submit'], label{
+    cursor: pointer;
+}
+
+main section.area-inscricao form input[type='submit']{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 1em;
+    width: 18em;
+    margin: 0 auto;
+}
+
+main section.area-programacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    gap: 1em;
+}
+
+main section.area-organizacao{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+}
+
+main section.area-organizacao div{
+    display: flex;
+    flex-direction: column;
+}
+
+main picture .img{
     max-width: 15em;
     max-height: 20em;
     width: auto;
     height: auto;
+    filter: grayscale(100);
+}
+
+main div.area-henrique {
+    background-image: url(../imgs/henrique.jpg);
+    filter: grayscale(100);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+main div.area-amanda{
+    background-image: url(../imgs/amanda.jpg);
+    filter: grayscale(100);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+main div.area-larissa{
+    background-image: url(../imgs/ellen.jpg);
+    filter: grayscale(100);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+main div.area-natalia{
+    background-image: url(../imgs/georgia.jpg);
+    filter: grayscale(100);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+main .nomePalestrante{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1.5em;
 }
 
 footer{
     background-color: #224459;
     color: white;
-    padding-bottom: 10em;
+    text-align: center;
+    padding: 3em;
 }
