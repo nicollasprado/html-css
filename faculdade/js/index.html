@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+    <style>
+        div{
+            float: left;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id="resultado"></p>
+    <script>
+    
+    // alert('Bem Vindo')
+
+    var a, b, c
+    a = 17;
+    b = 54;
+    c = a + b
+    
+    console.log('Console 1')
+
+    document.write('<p>O valor de "C" é '+c+'</p>');
+    document.getElementById('resultado').innerHTML = c
+
+    console.log('Console 2')
+
+    var d = new Date()
+    document.write("Data de hoje: ", d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear())
+
+        for(i=1; i <= 855; i++){
+            r = Math.floor(Math.random() * 256);
+            g = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            document.write(`<div style='background-color: rgb(${r}, ${g}, ${b})'></div>`)
+        }
+    </script>
+</body>
+</html>

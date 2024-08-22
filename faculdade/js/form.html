@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="a">
+        <input type="text" id="b">
+        <button id="calcular">Calcular</button>
+    </div>
+
+    <p id="resultado"></p>
+    <p id="cont"></p>
+
+    <script>
+        document.getElementById('calcular').addEventListener('click', calcular);
+        document.getElementById('calcular').addEventListener('click', verificar);
+
+        function calcular(){
+            var a = parseFloat(document.getElementById('a').value);
+            var b = parseFloat(document.getElementById('b').value);
+            document.getElementById('resultado').innerText = "Resultado : " + (a*b)
+        }
+        
+        function verificar(){
+            var a = parseFloat(document.getElementById('a').value);
+            var b = parseFloat(document.getElementById('b').value);
+            if (a==b){
+                document.getElementById('a').style.border = "1em solid green"
+                document.getElementById('b').style.border = "1em solid green"
+            }else{
+                document.getElementById('a').style.border = "1em solid red"
+                document.getElementById('b').style.border = "1em solid red"
+            }
+
+        document.body.addEventListener('keypress', function(e){
+            document.getElementById('cont').innerHTML = String.fromCharCode(e.keyCode);
+        })
+
+        }
+    </script>
+</body>
+</html>
